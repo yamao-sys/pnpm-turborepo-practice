@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { Button2 } from "@repo/ui/button2";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -96,6 +97,7 @@ export default function Home() {
           />
           Go to turbo.build →
         </a>
+        <Button2 />
       </footer>
     </div>
   );
